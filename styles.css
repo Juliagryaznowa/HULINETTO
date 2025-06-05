@@ -505,6 +505,32 @@ nav ul li a:hover {
 
 
 
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 600px; /* максимальная ширина формы */
+  margin: 50px auto 0; /* отступ сверху — чтобы не перекрывался хедером */
+  background: rgba(0, 0, 0, 0.8); /* тёмный фон с прозрачностью */
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 600px; /* уменьшил высоту */
+  border: none;
+  border-radius: 10px;
+}
+
+/* Для мобильных — адаптивная высота */
+@media (max-width: 600px) {
+  .modal-content iframe {
+    height: 500px;
+  }
+}
+
 
 .modal {
   display: none;
@@ -552,63 +578,6 @@ nav ul li a:hover {
 
 .modal-content label span {
   color: #ffffff;
-}
-
-.checkbox-group label {
-  display: block;
-  color: #D30000;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.checkbox-group input[type="checkbox"] {
-  margin-right: 10px;
-  accent-color: #D30000;
-  align-items: center;
-}
-
-.submit-btn {
-  background: none;
-  border: 2px solid #D30000;
-  color: #D30000;
-  padding: 10px 20px;
-  font-family: 'Vetrino', serif;
-  font-weight: bold;
-  font-size: 18px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  display: block;
-  margin: 30px auto 0; /* по центру и отступ сверху */
-}
-
-.submit-btn:hover {
-  transform: scale(1.2);
-}
-
-#success-message {
-  display: none;
-  text-align: center;
-  margin-top: 30px;
-}
-
-#success-message.visible {
-  display: block;
-}
-
-.ask-button {
-  display: inline-block;
-  margin-top: 15px;
-  background: none;
-  border: 2px solid #D30000;
-  color: #D30000;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-.ask-button:hover {
-  transform: scale(1.1);
 }
 
 
