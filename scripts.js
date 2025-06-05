@@ -138,17 +138,17 @@ document.addEventListener('DOMContentLoaded', () => {
 const services = [
   {
     selector: '.usluga-card:nth-child(1) img',
-    images: ['images/usluga1_1.JPG', 'images/usluga1_2.JPG', 'images/usluga1_3.JPG'],
+    images: ['images/usluga1_1.jpg', 'images/usluga1_2.jpg', 'images/usluga1_3.jpg'],
     delay: 0
   },
   {
     selector: '.usluga-card:nth-child(2) img',
-    images: ['images/usluga2_1.JPG', 'images/usluga2_2.JPG', 'images/usluga2_3.JPG'],
+    images: ['images/usluga2_1.jpg', 'images/usluga2_2.jpg', 'images/usluga2_3.jpg'],
     delay: 1000
   },
   {
     selector: '.usluga-card:nth-child(3) img',
-    images: ['images/usluga3_1.JPG', 'images/usluga3_2.JPG', 'images/usluga3_3.JPG'],
+    images: ['images/usluga3_1.jpg', 'images/usluga3_2.jpg', 'images/usluga3_3.jpg'],
     delay: 2000
   }
 ];
