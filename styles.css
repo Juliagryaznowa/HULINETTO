@@ -124,19 +124,19 @@ nav ul li a:hover {
   display: flex;
   gap: 20px;
   opacity: 0;
-  transition: opacity 0.6s ease, transform 1.5s ease;
+  transition: opacity 0.4s ease, transform 1s ease;
   margin:  0 -10px 40px -10px;
   box-sizing: border-box;
 }
 
 .author-block.left {
-  transform: translateX(-30%);
+  transform: translateX(-89%);
   align-self: flex-start;
   border-radius: 0 20px 20px 0;
 }
 
 .author-block.right {
-  transform: translateX(30%);
+  transform: translateX(80%);
   align-self: flex-end;
   flex-direction: row-reverse;
   text-align: right;
@@ -237,7 +237,7 @@ nav ul li a:hover {
   font-family: 'Vetrino', serif;
   min-height: 200px;
   max-width: 30%;
-  margin-bottom: -100px;
+  margin-bottom: -120px;
   font-weight: bold;
 }
 
@@ -270,6 +270,7 @@ nav ul li a:hover {
   text-align: center;
   background-image: url("images/fon_shop.png");
   background-size: cover;
+  background-position: center;
 }
 
 .shop h2 {
@@ -410,7 +411,6 @@ nav ul li a:hover {
 .hidden {
   display: none;
 }
-
 
 
 
