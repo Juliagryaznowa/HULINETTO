@@ -274,12 +274,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Открытие модального окна при клике на кнопку "Сделать заказ"
-document.querySelectorAll('.usluga-card button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.getElementById('order-modal').style.display = 'flex';
+window.addEventListener('load', () => {
+  document.querySelectorAll('.usluga-card button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('order-modal').style.display = 'flex';
+    });
   });
 });
-
 // Отправка формы через Formspree
 document.getElementById('order-form').addEventListener('submit', function (e) {
   e.preventDefault();
