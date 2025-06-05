@@ -1,174 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ХУЛИNETTO</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ХУЛИNETTO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-</head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">ГЛАВНАЯ</a></li>
-                <li><a href="#authors">АВТОРЫ</a></li>
-		        <li><a href="#about">О БРЕНДЕ</a></li>
-                <li><a href="#shop">МАГАЗИН</a></li>
-                <li><a href="#contact">КОНТАКТЫ</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">ГЛАВНАЯ</a></li>
+        <li><a href="#authors">АВТОРЫ</a></li>
+        <li><a href="#about">О БРЕНДЕ</a></li>
+        <li><a href="#shop">МАГАЗИН</a></li>
+        <li><a href="#contact">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<section id="home" class="banner">
-	    <div class="banner-content">
-	        <div class="logo-container">
-        	    <img src="nozhnitsi_logo.svg" alt="Logo" class="logo">
-	            <h1>Добро пожаловать в</h1>
-                    <img src="images/ХУЛИNETTO.svg" alt="ХУЛИNETTO" class="logo">
-	            <p>Исключительная мода для каждого</p>
-	        </div>
-	    </div>
-	</section>
-
-
-    <section id="authors" class="authors">
-        <h2>АВТОРЫ</h2>
-        <div class="author-block left">
-        <img src="images/author1.png" alt="Автор 1">
-        <div class="author-info">
-            <h3>Юлия Грязнова</h3>
-        <p>Основательница бренда ХУЛИNETTO, дизайнер и художница. 
-            <br>Создаёт уникальные образы, вдохновлённые уличной культурой и актуальным искусством. 
-            <br>Её путь начался с желания уйти от шаблонных образов стоковых магазинов. 
-            <br>Она не хотела быть «как все» — и создала собственную эстетику. 
-            <br>Сегодня Юлия отвечает за пошив и кастом, 
-            контролирует каждый стежок и вдохновляет на смелые решения.</p>
-        </div>
-        </div>
-
-        <div class="author-block right">
-        <img src="images/author2.png" alt="Автор 2">
-        <div class="author-info">
-        <h3>Дарья Мойсеева</h3>
-        <p>Креативный директор и соавтор коллекций, художница. 
-            <br>Преисполнена желанием выйти за рамки принятого обществом. 
-            <br>Именно её руке принадлежат уникальные эскизы и авторская роспись.
-            <br>Она отвечает за кастом и творческую часть, превращая 
-            <br>каждую вещь в арт-объект со своим огненным характером.</p>
-        </div>
-        </div>
-    </section>
-
-
-    <section id="about" class="about">
-        <h2>О БРЕНДЕ</h2>
-        <div class="about-video-typed">
-            <div class="typed-left">
-                <p><span id="typed-left"></span></p>
-            </div>
-            <div class="video-wrapper">
-                <video class="video" controls>
-                     <source src="https://www.dl.dropboxusercontent.com/scl/fi/9hkfgk5xunknov10j2ss2/o_brende_tizer.MP4?rlkey=lj5uarussob63yjjczdksc5vq" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                </video>
-            </div>
-            <div class="typed-right">
-                <p><span id="phrase-container"></span></p>
-            </div>
-        </div>
-    </section> 
-
-    <section id="shop" class="shop">
-        <h2>МАГАЗИН</h2>
-        <div class="usluga-grid">
-            <div class="usluga-card">
-                <h3>РОСПИСЬ</h3>
-                <img src="images/usluga1_1.jpg" alt="Услуга 1">
-                <p>Индивидуальная роспись красками по ткани на вашей или заказной вещи</p>
-                <button><span>СДЕЛАТЬ ЗАКАЗ</span></button> 
-            </div>
-            <div class="usluga-card">
-                    <h3>НАШИ МОДЕЛИ</h3>
-                    <img src="images/usluga2_1.jpg" alt="Услуга 2">
-                    <p>Готовые уникальные модели ХУЛИNETTO с возможностью пошива вашего размера</p>
-                    <button><span>СДЕЛАТЬ ЗАКАЗ</span></button>
-            </div>
-            <div class="usluga-card">
-                <h3>КАСТОМ</h3>
-                <img src="images/usluga3_1.jpg" alt="Услуга 3">
-                <p>Переделка/апсайкл ― дарим новую жизнь старым вещам</p>
-                <button><span>СДЕЛАТЬ ЗАКАЗ</span></button>
-            </div>
-        </div>
-    </section>
-
-    <div id="order-modal" class="modal">
-    <div class="modal-content">
-        <header>
-        <nav>
-            <ul>
-            <li><a href="#home">ГЛАВНАЯ</a></li>
-            <li><a href="#authors">АВТОРЫ</a></li>
-            <li><a href="#about">О БРЕНДЕ</a></li>
-            <li><a href="#shop">МАГАЗИН</a></li>
-            <li><a href="#contact">КОНТАКТЫ</a></li>
-            </ul>
-        </nav>
-        </header>
-        <form id="order-form" action="https://formspree.io/f/mjkrklvw" method="POST">
-        <h3>Имя</h3>
-        <input type="text" name="name" placeholder="Name" required>
-        
-        <h3>Ссылка для связи</h3>
-        <input type="text" name="contact" placeholder="https://t.me/name" required>
-
-        <div class="checkbox-group">
-            <label><input type="checkbox" name="options[]" value="Роспись"> Роспись</label>
-            <label><input type="checkbox" name="options[]" value="Наши модели"> Наши модели</label>
-            <label><input type="checkbox" name="options[]" value="Кастом"> Кастом</label>
-        </div>
-
-        <button type="submit" class="submit-btn">ОТПРАВИТЬ ЗАЯВКУ</button>
-        </form>
-
-        <div id="success-message" class="hidden">
-        <p>Ваша заявка отправлена, с вами свяжутся в ближайшее время.</p>
-        <a href="https://t.me/jdmtrvn" class="ask-button">ЗАДАТЬ ВОПРОС</a>
-        </div>
-    </div>
-    </div>
-
-
-    <section id="contact" class="contact">
-        <div class="contact-bg">
-              <img src="images/fon_cont.png" alt="Фон">
-        </div>
-        <div class="contact">
-      <div class="burst-container"></div>
-        
-          <h2>КОНТАКТЫ</h2>
-          <ul class="contacts">
-            <li><a href="https://t.me/jdmtrvn"><i class="fab fa-telegram"></i> Telegram</a></li>
-            <li><a href="https://vk.com/id358119398"><i class="fab fa-vk"></i> VK</a></li>
-            <li><a href="mailto:juliagryaznova@yandex.ru"><i class="fas fa-envelope"></i> Email</a></li>
-          </ul>
+  <section id="home" class="banner">
+    <div class="banner-content">
+      <div class="logo-container">
+        <img src="nozhnitsi_logo.svg" alt="Logo" class="logo" />
+        <h1>Добро пожаловать в</h1>
+        <img src="images/ХУЛИNETTO.svg" alt="ХУЛИNETTO" class="logo" />
+        <p>Исключительная мода для каждого</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 ХУЛИNETTO.</p>
-    </footer>
+  <section id="authors" class="authors">
+    <h2>АВТОРЫ</h2>
+    <div class="author-block left">
+      <img src="images/author1.png" alt="Автор 1" />
+      <div class="author-info">
+        <h3>Юлия Грязнова</h3>
+        <p>Основательница бренда ХУЛИNETTO, дизайнер и художница.<br>Создаёт уникальные образы, вдохновлённые уличной культурой и актуальным искусством.<br>Её путь начался с желания уйти от шаблонных образов стоковых магазинов.<br>Она не хотела быть «как все» — и создала собственную эстетику.<br>Сегодня Юлия отвечает за пошив и кастом, контролирует каждый стежок и вдохновляет на смелые решения.</p>
+      </div>
+    </div>
 
+    <div class="author-block right">
+      <img src="images/author2.png" alt="Автор 2" />
+      <div class="author-info">
+        <h3>Дарья Мойсеева</h3>
+        <p>Креативный директор и соавтор коллекций, художница.<br>Преисполнена желанием выйти за рамки принятого обществом.<br>Именно её руке принадлежат уникальные эскизы и авторская роспись.<br>Она отвечает за кастом и творческую часть, превращая каждую вещь в арт-объект со своим огненным характером.</p>
+      </div>
+    </div>
+  </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
-<script src="scripts.js"></script>
+  <section id="about" class="about">
+    <h2>О БРЕНДЕ</h2>
+    <div class="about-video-typed">
+      <div class="typed-left">
+        <p><span id="typed-left"></span></p>
+      </div>
+      <div class="video-wrapper">
+        <video class="video" controls>
+          <source src="https://www.dl.dropboxusercontent.com/scl/fi/9hkfgk5xunknov10j2ss2/o_brende_tizer.MP4?rlkey=lj5uarussob63yjjczdksc5vq" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+      <div class="typed-right">
+        <p><span id="phrase-container"></span></p>
+      </div>
+    </div>
+  </section>
 
+  <section id="shop" class="shop">
+    <h2>МАГАЗИН</h2>
+    <div class="usluga-grid">
+      <div class="usluga-card">
+        <h3>РОСПИСЬ</h3>
+        <img src="images/usluga1_1.jpg" alt="Услуга 1" />
+        <p>Индивидуальная роспись красками по ткани на вашей или заказной вещи</p>
+        <button><span>СДЕЛАТЬ ЗАКАЗ</span></button>
+      </div>
+      <div class="usluga-card">
+        <h3>НАШИ МОДЕЛИ</h3>
+        <img src="images/usluga2_1.jpg" alt="Услуга 2" />
+        <p>Готовые уникальные модели ХУЛИNETTO с возможностью пошива вашего размера</p>
+        <button><span>СДЕЛАТЬ ЗАКАЗ</span></button>
+      </div>
+      <div class="usluga-card">
+        <h3>КАСТОМ</h3>
+        <img src="images/usluga3_1.jpg" alt="Услуга 3" />
+        <p>Переделка/апсайкл ― дарим новую жизнь старым вещам</p>
+        <button><span>СДЕЛАТЬ ЗАКАЗ</span></button>
+      </div>
+    </div>
+  </section>
 
+  <div id="order-modal" class="modal">
+    <div class="modal-content">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfPebtkHIShFPwPworjNFFqAohoLx0PCS__HTWH9XRSrB8HAg/viewform?usp=dialog"
+        width="100%"
+        height="600"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        style="border-radius: 10px;"
+        allowfullscreen>
+      Загрузка…
+      </iframe>
+    </div>
+  </div>
 
+  <section id="contact" class="contact">
+    <div class="contact-bg">
+      <img src="images/fon_cont.png" alt="Фон" />
+    </div>
+    <div class="contact">
+      <div class="burst-container"></div>
+      <h2>КОНТАКТЫ</h2>
+      <ul class="contacts">
+        <li><a href="https://t.me/jdmtrvn"><i class="fab fa-telegram"></i> Telegram</a></li>
+        <li><a href="https://vk.com/id358119398"><i class="fab fa-vk"></i> VK</a></li>
+        <li><a href="mailto:juliagryaznova@yandex.ru"><i class="fas fa-envelope"></i> Email</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ХУЛИNETTO.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
