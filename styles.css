@@ -492,7 +492,7 @@ nav ul li a:hover {
 }
 
 .contacts a:hover {
-  transform: translateX(10px); /* отпрыгивает вправо */
+  transform: translateX(10px); 
 }
 
 .contacts i {
@@ -508,9 +508,9 @@ nav ul li a:hover {
 .modal-content {
   position: relative;
   width: 90%;
-  max-width: 600px; /* максимальная ширина формы */
-  margin: 50px auto 0; /* отступ сверху — чтобы не перекрывался хедером */
-  background: rgba(0, 0, 0, 0.8); /* тёмный фон с прозрачностью */
+  max-width: 600px;
+  margin: 50px auto 0; 
+  background: rgba(0, 0, 0, 0.8); 
   padding: 20px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -519,12 +519,12 @@ nav ul li a:hover {
 
 .modal-content iframe {
   width: 100%;
-  height: 600px; /* уменьшил высоту */
+  height: 600px;
   border: none;
   border-radius: 10px;
 }
 
-/* Для мобильных — адаптивная высота */
+
 @media (max-width: 600px) {
   .modal-content iframe {
     height: 500px;
@@ -588,4 +588,72 @@ footer {
   text-align: center;
   padding: 20px 0;
   z-index: 3;
+}
+
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%; 
+  }
+
+  section {
+    min-height: 100vh;
+    padding: 40px 10px;
+    box-sizing: border-box;
+  }
+
+  .about-video-typed {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .typed-left, .typed-right {
+    max-width: 90%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .video-wrapper {
+    width: 100%;
+  }
+
+  .shop .usluga-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .usluga-card {
+    width: 90vw;
+  }
+
+  .author-block {
+    flex-direction: column !important;
+    text-align: center;
+    align-items: center;
+  }
+
+  .author-block img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contacts {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacts li {
+    margin-left: 0;
+  }
+
+  .modal-content {
+    margin-top: 80px; 
+  }
 }
