@@ -492,7 +492,7 @@ nav ul li a:hover {
 }
 
 .contacts a:hover {
-  transform: translateX(10px); 
+  transform: translateX(10px); /* отпрыгивает вправо */
 }
 
 .contacts i {
@@ -505,12 +505,17 @@ nav ul li a:hover {
 
 
 
+
+
+
+
+
 .modal-content {
   position: relative;
   width: 90%;
-  max-width: 600px;
-  margin: 50px auto 0; 
-  background: rgba(0, 0, 0, 0.8); 
+  max-width: 600px; /* максимальная ширина формы */
+  margin: 50px auto 0; /* отступ сверху — чтобы не перекрывался хедером */
+  background: rgba(0, 0, 0, 0.8); /* тёмный фон с прозрачностью */
   padding: 20px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -519,12 +524,12 @@ nav ul li a:hover {
 
 .modal-content iframe {
   width: 100%;
-  height: 600px;
+  height: 600px; /* уменьшил высоту */
   border: none;
   border-radius: 10px;
 }
 
-
+/* Для мобильных — адаптивная высота */
 @media (max-width: 600px) {
   .modal-content iframe {
     height: 500px;
@@ -591,82 +596,123 @@ footer {
 }
 
 
-
 @media (max-width: 768px) {
   html {
-    font-size: 90%; 
+    font-size: 90%;
   }
 
-  section {
-    min-height: 100vh;
-    padding: 40px 10px;
-    box-sizing: border-box;
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .logo-container {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  .logo-container h1,
+  .logo-container p {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+
+  .banner-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-block {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .author-block img {
+    width: 30vw;
+    height: auto;
+  }
+
+  .author-info {
+    padding: 0 10px;
   }
 
   .about-video-typed {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding: 0 10px;
   }
 
-  .typed-left, .typed-right {
-    max-width: 90%;
+  .typed-left {
+    text-align: left;
+    width: 90%;
+    align-self: flex-start;
+  }
+
+  .typed-right {
+    margin-bottom: 0;
+    margin-top: 20px;
     text-align: center;
-    margin: 0;
+    width: 90%;
   }
 
   .video-wrapper {
     width: 100%;
+    margin-top: 20px;
   }
 
-  .shop .usluga-grid {
-    grid-template-columns: 1fr; 
-  }
-
-  .usluga-card {
-    width: 90vw;
-  }
-
-  .author-block {
-    flex-direction: column !important;
-    text-align: center;
-    align-items: center;
-  }
-
-  .author-block img {
+  .video {
     width: 100%;
     height: auto;
   }
 
-  .header nav ul {
-    flex-direction: column;
-    gap: 10px;
+  #about {
+    padding-bottom: 150px;
+  }
+
+  .shop .usluga-grid {
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .usluga-card {
+    width: 60vw;
+  }
+
+  .usluga-card button::before {
+    background-size: 40% auto;
+  }
+
+  .usluga-card button {
+    padding: 20px;
+    min-height: 80px;
   }
 
   .contacts {
-    align-items: center;
-    text-align: center;
-  }
-
-  .contacts li {
-    margin-left: 0;
-  }
-
-  .modal-content {
-    margin-top: 80px; 
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 20px;
   }
 }
 
-/* Активируем псевдо-анимацию вручную при клике */
 .usluga-card button.force-hover::before {
   animation: reveal-mask 1s ease-out forwards;
   opacity: 1;
 }
 
 .usluga-card button.clicked {
-  transform: scale(1.1); /* как при наведении */
+  transform: scale(1.1);
   -webkit-text-stroke: 1px #D30000;
   color: #D30000;
 }
-
