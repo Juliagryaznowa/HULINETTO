@@ -196,11 +196,16 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollObserver.observe(contactSection);
 
   // Открытие и закрытие модального окна с Google Формой
-  document.querySelectorAll('.usluga-card button').forEach(btn => {
-    btn.addEventListener('click', () => {
+document.querySelectorAll('.usluga-card button').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    btn.classList.add('clicked');
+    setTimeout(() => {
       document.getElementById('order-modal').style.display = 'flex';
-    });
+      btn.classList.remove('clicked');
+    }, 300); // задержка 0.3 секунды
   });
+});
+
   document.getElementById('order-modal').addEventListener('click', e => {
     if (e.target.id === 'order-modal') {
       document.getElementById('order-modal').style.display = 'none';
