@@ -657,3 +657,16 @@ footer {
     margin-top: 80px; 
   }
 }
+
+/* Активируем псевдо-анимацию вручную при клике */
+.usluga-card button.force-hover::before {
+  animation: reveal-mask 1s ease-out forwards;
+  opacity: 1;
+}
+
+.usluga-card button.clicked {
+  transform: scale(1.1); /* как при наведении */
+  -webkit-text-stroke: 1px #D30000;
+  color: #D30000;
+}
+
