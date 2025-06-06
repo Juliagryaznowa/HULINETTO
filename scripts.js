@@ -149,9 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
     img.className = 'burst-sketch';
     const angle = (2 * Math.PI / 15) * i;
     const radius = 700 + Math.random() * 50;
-    const isMobile = window.innerWidth <= 768;
-    const x = Math.cos(angle) * radius * (isMobile ? 1 : 1);
-    const y = Math.sin(angle) * radius * (isMobile ? 1.5 : 0.7);
+    const x = Math.cos(angle) * radius;
+    const y = Math.sin(angle) * radius * 0.7;
     const rotate = Math.floor(Math.random() * 91) - 45;
     const size = 600 + Math.floor(Math.random() * 101);
     img.style.width = `${size}px`;
@@ -168,9 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
     img.className = 'burst-sketch';
     const angle = (2 * Math.PI / 10) * i;
     const radius = 350 + Math.random() * 100;
-    const isMobile = window.innerWidth <= 768;
-    const x = Math.cos(angle) * radius * (isMobile ? 1 : 1);
-    const y = Math.sin(angle) * radius * (isMobile ? 1.5 : 0.7);
+    const x = Math.cos(angle) * radius;
+    const y = Math.sin(angle) * radius * 0.7;
     const rotate = Math.floor(Math.random() * 91) - 45;
     const size = 250 + Math.floor(Math.random() * 151);
     img.style.width = `${size}px`;
@@ -199,18 +197,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Открытие и закрытие модального окна с Google Формой
   document.querySelectorAll('.usluga-card button').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    const button = e.currentTarget;
-    button.classList.add('clicked');
-    button.classList.add('force-hover');
-
-    setTimeout(() => {
+    btn.addEventListener('click', () => {
       document.getElementById('order-modal').style.display = 'flex';
-      button.classList.remove('clicked');
-      button.classList.remove('force-hover');
-    }, 300);
-  });
-});
+    });
   });
   document.getElementById('order-modal').addEventListener('click', e => {
     if (e.target.id === 'order-modal') {
