@@ -198,13 +198,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Открытие и закрытие модального окна с Google Формой
 document.querySelectorAll('.usluga-card button').forEach(btn => {
   btn.addEventListener('click', (e) => {
-    btn.classList.add('clicked');
+    const button = e.currentTarget;
+    button.classList.add('clicked');
+
+    // Добавим принудительно псевдо-анимацию (для ::before)
+    button.classList.add('force-hover');
+
     setTimeout(() => {
       document.getElementById('order-modal').style.display = 'flex';
-      btn.classList.remove('clicked');
-    }, 300); // задержка 0.3 секунды
+      button.classList.remove('clicked');
+      button.classList.remove('force-hover');
+    }, 300); // 0.3 сек задержка
   });
 });
+
 
   document.getElementById('order-modal').addEventListener('click', e => {
     if (e.target.id === 'order-modal') {
